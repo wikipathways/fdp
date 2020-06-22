@@ -1,1 +1,4 @@
 PREFIX foo: <http://examples.org/foo>
+PREFIX dtl: <http://examples.org/dtl>
+
+foo:fdp a dtl:FDP .
