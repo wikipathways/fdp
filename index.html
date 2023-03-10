@@ -1,4 +1,5 @@
 @prefix dct:   <http://purl.org/dc/terms/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix fdp-o: <http://purl.org/fdp/fdp-o#> .
 @prefix ldp:   <http://www.w3.org/ns/ldp#> .
 @prefix xsdL   <http://www.w3.org/2001/XMLSchema#> .
@@ -11,4 +12,22 @@
   dct:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd4.0>;
   dct:publisher <https://wikipathways.org/>;
   fdp-o:metadataIssued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  fdp-o:metadataModified "2023-03-10T07:42:00.000Z"^^^^xsd:dateTime .
+  fdp-o:metadataModified "2023-03-10T07:42:00.000Z"^^^^xsd:dateTime;
+  fdp-o:metadataCatalog
+    <https://wikipathways.github.io/fdp/catalog> .
+
+<https://wikipathways.github.io/fdp/catalog/> a dcat:Catalog ;
+  dct:title "WikiPathways Catalog" ;
+  dcat:dataset <https://wikipathways.github.io/fdp/dataset/20230210/> .
+
+<https://wikipathways.github.io/fdp/dataset/20230210/> a dcat:Dataset ;
+  dct:title "WikiPathways 20230210" ;
+  dcat:distribution <https://wikipathways.github.io/fdp/dataset/20230210/gpml> ;
+    <https://wikipathways.github.io/fdp/dataset/20230210/gmt> .
+
+<https://wikipathways.github.io/fdp/dataset/20230210/gpml> a dcat:Distribution ;
+  dct:title "WikiPathways 20230210, GPML files" .
+  
+<https://wikipathways.github.io/fdp/dataset/20230210/gmt> a dcat:Distribution ;
+  dct:title "WikiPathways 20230210, GMT files" .
+  
