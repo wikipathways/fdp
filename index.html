@@ -1,4 +1,14 @@
-PREFIX foo: <http://examples.org/foo>
-PREFIX dtl: <http://examples.org/dtl>
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix fdp-o: <http://purl.org/fdp/fdp-o#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix xsdL   <http://www.w3.org/2001/XMLSchema#> .
 
-foo:fdp a dtl:FDP .
+<https://wikipathways.github.io/fdp/> a fdp-o:FairDataPoint
+  dct:title "WikiPathways FAIR Data Point";
+  dct:conformsTo <https://www.purl.org/fairtools/fdp/schema/0.1/fdpMetadata>;
+  dct:description "This FAIR Data Point deployment is used to describe WikiPathways.";
+  dct:hasVersion "1.0" ;
+  dct:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd4.0>;
+  dct:publisher <https://wikipathways.org/>;
+  fdp-o:metadataIssued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
+  fdp-o:metadataModified "2023-03-10T07:42:00.000Z"^^^^xsd:dateTime .
