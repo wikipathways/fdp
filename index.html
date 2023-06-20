@@ -5,6 +5,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix ldp:   <http://www.w3.org/ns/ldp#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
 
 <https://fdp.wikipathways.org/> a dcat:Resource, dcat:DataService, fdp-o:MetadataService, fdp-o:FairDataPoint ;
   rdfs:label "WikiPathways FAIR Data Point";
@@ -27,7 +28,15 @@
   ldp:contains <https://fdp.wikipathways.org/catalog/> .
 
 <https://fdp.wikipathways.org/catalog/> a dcat:Catalog ;
+  rdfs:label "WikiPathways Catalog" ;
   dct:title "WikiPathways Catalog" ;
+  foaf:homePage <https://data.wikipathways.org/> ;
+  fdp-o:metadataIssued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
+  fdp-o:metadataModified "2023-03-10T07:42:00.000Z"^^xsd:dateTime;
+  dct:issued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
+  dct:modified "2023-03-10T07:42:00.000Z"^^xsd:dateTime;
+  dct:conformsTo [ rdfs:label "Catalog Profile" ] ;
+  dct:isPartOf <http://fdp.wikipathways.org/>;
   dcat:dataset <https://wikipathways.github.io/fdp/dataset/20230210/> .
 
 <https://fdp.wikipathways.org/dataset/20230210/> a dcat:Dataset ;
