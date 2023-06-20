@@ -17,7 +17,7 @@ jobs:
         run: |
           cp index.html index.ttl
           cp catalog/index.html catalog/index.ttl
-          cp datasets/20230210/index.html datasets/20230210/index.ttl
+          cp dataset/20230210/index.html dataset/20230210/index.ttl
 
       - name: Validate FDP
         uses: vemonet/jena-riot-action@v3.14
