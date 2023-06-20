@@ -61,5 +61,5 @@ jobs:
         working-directory: ./script
         env:
           FDP_INDEX_URL: "http://178.63.49.197:8070"
-          FDP_URL: "http://fdp.wikipathways.org/"
+          FDP_URL: "https://fdp.wikipathways.org/"
         run: 'python ping.py'
