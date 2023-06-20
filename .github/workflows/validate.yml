@@ -32,4 +32,4 @@ jobs:
       - name: Validate Datasets
         uses: vemonet/jena-riot-action@v3.14
         with:
-          input: datasets/20230210/index.ttl
+          input: dataset/20230210/index.ttl
