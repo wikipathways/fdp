@@ -3,7 +3,7 @@
 import org.apache.jena.shex.ShexStatus
 
 workspaceRoot = ".."
-root = "wikipathways-fdp"
+root = "fdp"
 rdf = new net.bioclipse.managers.RDFManager(workspaceRoot);
 
 clazz = args[3]
