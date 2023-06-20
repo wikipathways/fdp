@@ -3,6 +3,7 @@
 @prefix fdp-o: <http://purl.org/fdp/fdp-o#> .
 @prefix ldp:   <http://www.w3.org/ns/ldp#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
 
 <https://fdp.wikipathways.org/> a fdp-o:FairDataPoint ;
   dct:title "WikiPathways FAIR Data Point";
@@ -15,6 +16,12 @@
   fdp-o:metadataModified "2023-03-10T07:42:00.000Z"^^xsd:dateTime;
   fdp-o:metadataCatalog
     <https://fdp.wikipathways.org/catalog> .
+
+<http://fdp.wikipathways.org/catalogs/> a ldp:DirectContainer;
+  dcterms:title "WikiPathways Catalogs";
+  ldp:hasMemberRelation <https://w3id.org/fdp/fdp-o#metadataCatalog> ;
+  ldp:membershipResource <https://fdp.wikipathways.org/> ;
+  ldp:contains <https://fdp.wikipathways.org/catalog/> .
 
 <https://fdp.wikipathways.org/catalog/> a dcat:Catalog ;
   dct:title "WikiPathways Catalog" ;
