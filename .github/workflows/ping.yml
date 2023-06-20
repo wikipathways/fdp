@@ -29,4 +29,4 @@ jobs:
         env:
           FDP_INDEX_URL: "http://178.63.49.197:8070"
           FDP_URL: "http://fdp.wikipathways.org/"
-        run: 'python main.py'      
+        run: 'python ping.py'      
