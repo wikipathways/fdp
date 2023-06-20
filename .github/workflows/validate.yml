@@ -13,17 +13,23 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Safe files as .ttl
+        run: |
+          cp index.html index.ttl
+          cp catalog/index.html catalog/index.ttl
+          cp datasets/20230210/index.html datasets/20230210/index.ttl
+
       - name: Validate FDP
         uses: vemonet/jena-riot-action@v3.14
         with:
-          input: index.html
+          input: index.ttl
 
       - name: Validate Catalog
         uses: vemonet/jena-riot-action@v3.14
         with:
-          input: catalog/index.html
+          input: catalog/index.ttl
 
       - name: Validate Datasets
         uses: vemonet/jena-riot-action@v3.14
         with:
-          input: datasets/20230210/index.html
+          input: datasets/20230210/index.ttl
