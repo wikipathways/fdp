@@ -16,7 +16,7 @@ store = rdf.createInMemoryStore(true);
 store = rdf.importFile(store, "/${root}/${file}", "TURTLE")
 report = rdf.validateAllOfType(
   store,
-  "/${root}/${shape}.shex",
+  "/${root}/shapes/${shape}.shex",
   "http://fairdatapoint.org/${shapeRes}",
   clazz
 )
