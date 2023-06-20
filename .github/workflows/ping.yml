@@ -1,0 +1,32 @@
+name: Ping the FDP Index
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 2"
+jobs:
+  turtle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Install python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+
+      - name: Install Python dependency
+        uses: py-actions/py-dependency-install@v4
+        with:
+          path: "script/requirements.txt"
+
+      - name: Ping FDP index
+        id: ping-index
+        working-directory: ./script
+        env:
+          FDP_INDEX_URL: "http://178.63.49.197:8070"
+          FDP_URL: "http://fdp.wikipathways.org/"
+        run: 'python main.py'      
