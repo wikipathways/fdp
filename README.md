@@ -10,7 +10,12 @@ The following commands can be used to validate the FDP against
 the matching shape expression:
 
 ```shell
-groovy validate.groovy resource ResourceShape index.html FairDataPoint
+groovy validate.groovy resource.shex http://fairdatapoint.org/ResourceShape \
+                       index.html    http://purl.org/fdp/fdp-o#FairDataPoint
+groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape \
+                       index.html    http://www.w3.org/ns/dcat#Catalog
+groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape \
+                       catalog/index.html http://www.w3.org/ns/dcat#Catalog
 ```
 
 ## Funding

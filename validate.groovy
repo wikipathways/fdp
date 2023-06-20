@@ -6,8 +6,7 @@ workspaceRoot = ".."
 root = "wikipathways-fdp"
 rdf = new net.bioclipse.managers.RDFManager(workspaceRoot);
 
-type = args[3]
-clazz = "http://purl.org/fdp/fdp-o#" + type
+clazz = args[3]
 file = args[2]
 shape = args[0]
 shapeRes = args[1]
@@ -16,8 +15,8 @@ store = rdf.createInMemoryStore(true);
 store = rdf.importFile(store, "/${root}/${file}", "TURTLE")
 report = rdf.validateAllOfType(
   store,
-  "/${root}/shapes/${shape}.shex",
-  "http://fairdatapoint.org/${shapeRes}",
+  "/${root}/shapes/${shape}",
+  shapeRes,
   clazz
 )
 
