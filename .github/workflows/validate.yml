@@ -43,6 +43,13 @@ jobs:
         with:
           input: dataset/20230210/index.ttl
 
+      - name: ShEx validation
+        run: |
+          sudo apt install groovy
+          groovy validate.groovy resource.shex http://fairdatapoint.org/ResourceShape index.html         http://purl.org/fdp/fdp-o#FairDataPoint
+          groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape  index.html         http://www.w3.org/ns/dcat#Catalog
+          groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape  catalog/index.html http://www.w3.org/ns/dcat#Catalog
+
   # Build Jeckyll Website job
   build:
     runs-on: ubuntu-latest
