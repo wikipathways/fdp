@@ -1,4 +1,4 @@
-name: Ping the FDP Index
+name: Weekly ping the FDP Index
 
 on:
   workflow_dispatch:
