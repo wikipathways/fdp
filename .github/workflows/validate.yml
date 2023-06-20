@@ -1,4 +1,4 @@
-name: Validation
+name: Validate FDP and Deploy
 
 on:
   workflow_dispatch:
