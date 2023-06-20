@@ -14,16 +14,16 @@ jobs:
           fetch-depth: 0
 
       - name: Validate FDP
-      - uses: vemonet/jena-riot-action@v3.14
+        uses: vemonet/jena-riot-action@v3.14
         with:
           input: index.html
 
       - name: Validate Catalog
-      - uses: vemonet/jena-riot-action@v3.14
+        uses: vemonet/jena-riot-action@v3.14
         with:
           input: catalog/index.html
 
       - name: Validate Datasets
-      - uses: vemonet/jena-riot-action@v3.14
+        uses: vemonet/jena-riot-action@v3.14
         with:
           input: datasets/20230210/index.html
