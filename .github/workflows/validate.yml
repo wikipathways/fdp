@@ -2,6 +2,8 @@ name: Validation
 
 on:
   push:
+    paths:
+      - '**/index.html'
   pull_request:
 
 jobs:
@@ -36,6 +38,7 @@ jobs:
 
   ping:
     runs-on: ubuntu-latest
+    needs: validate-rdf
     steps:
       - uses: actions/checkout@v3
         with:
