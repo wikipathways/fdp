@@ -16,13 +16,18 @@
   dct:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd4.0>;
   dct:publisher <https://wikipathways.org/>;
   dct:conformsTo [ rdfs:label "FAIR Data Point Profile" ];
+  dct:accessRights <https://fdp.wikipathways.org/#accessRights> ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
   fdp-o:metadataIssued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  fdp-o:metadataModified "2023-03-10T07:42:00.000Z"^^xsd:dateTime;
+  fdp-o:metadataModified "2023-06-25T07:42:00.000Z"^^xsd:dateTime;
   fdp-o:metadataCatalog
     <https://fdp.wikipathways.org/catalog> .
 
 <https://wikipathways.org/> a foaf:Agent ; foaf:name "WikiPathways" .
 
+<https://fdp.wikipathways.org/#accessRights> a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+  
 <http://fdp.wikipathways.org/catalogs/> a ldp:DirectContainer;
   dct:title "WikiPathways Catalogs";
   ldp:hasMemberRelation <https://w3id.org/fdp/fdp-o#metadataCatalog> ;
