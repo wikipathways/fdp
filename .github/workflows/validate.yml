@@ -100,14 +100,6 @@ jobs:
         with:
           path: "script/requirements.txt"
 
-      - name: Ping FDP test index
-        id: ping-test-index
-        working-directory: ./script
-        env:
-          FDP_INDEX_URL: "http://178.63.49.197:8070"
-          FDP_URL: "https://fdp.wikipathways.org/"
-        run: 'python ping.py'
-
       - name: Ping FDP index
         id: ping-index
         working-directory: ./script
