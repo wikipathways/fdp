@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - '**/index.html'
+      = '**/index.ttl'
   pull_request:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -21,12 +22,6 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-
-      - name: Safe files as .ttl
-        run: |
-          cp index.html index.ttl
-          cp catalog/index.html catalog/index.ttl
-          cp dataset/20230210/index.html dataset/20230210/index.ttl
 
       - name: Validate FDP
         uses: vemonet/jena-riot-action@v3.14
@@ -66,6 +61,11 @@ jobs:
         with:
           source: .
           destination: ./_site
+      - name: Copy .ttl filss
+        run: |
+          cp index.ttl ./_site/index.ttl
+          cp catalog/index.ttl ./_site/catalog/index.ttl
+          cp dataset/20240210/index.ttl ./_site/dataset/20240210/index.ttl
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
