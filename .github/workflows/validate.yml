@@ -100,5 +100,5 @@ jobs:
         working-directory: ./script
         env:
           FDP_INDEX_URL: "https://index.vp.ejprarediseases.org/"
-          FDP_URL: "https://fdp.wikipathways.org/"
+          FDP_URL: "https://fdp.wikipathways.org/index.ttl"
         run: 'python ping.py'
