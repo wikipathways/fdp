@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - '**/index.html'
-      = '**/index.ttl'
+      - '**/index.ttl'
   pull_request:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
