@@ -22,33 +22,15 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      - name: Safe files as .ttl
-        run: |
-          cp index.html index.ttl
-          cp catalog/index.html catalog/index.ttl
-          cp dataset/20230210/index.html dataset/20230210/index.ttl
-
-      - name: Validate FDP
-        uses: vemonet/jena-riot-action@v3.14
-        with:
-          input: index.ttl
-
-      - name: Validate Catalog
-        uses: vemonet/jena-riot-action@v3.14
-        with:
-          input: catalog/index.ttl
-
-      - name: Validate Datasets
-        uses: vemonet/jena-riot-action@v3.14
-        with:
-          input: dataset/20230210/index.ttl
-
       - name: ShEx validation
         run: |
           sudo apt install groovy
           groovy validate.groovy resource.shex http://fairdatapoint.org/ResourceShape index.html         http://purl.org/fdp/fdp-o#FairDataPoint
           groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape  index.html         http://www.w3.org/ns/dcat#Catalog
           groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape  catalog/index.html http://www.w3.org/ns/dcat#Catalog
+          groovy validate.groovy resource.shex http://fairdatapoint.org/ResourceShape index.ttl          http://purl.org/fdp/fdp-o#FairDataPoint
+          groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape  index.ttl          http://www.w3.org/ns/dcat#Catalog
+          groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape  catalog/index.ttl  http://www.w3.org/ns/dcat#Catalog
 
   # Build Jeckyll Website job
   build:
