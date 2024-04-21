@@ -1,11 +1,10 @@
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
-@prefix fdpo: <https://w3id.org/fdp/fdp-o#> .
-@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix fdpo:  <https://w3id.org/fdp/fdp-o#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix ldp:   <http://www.w3.org/ns/ldp#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
 <https://fdp.wikipathways.org/index.ttl> a dcat:Resource, dcat:DataService, fdpo:MetadataService, fdpo:FairDataPoint ;
   rdfs:label "WikiPathways FAIR Data Point";
@@ -19,7 +18,7 @@
   dct:accessRights <https://fdp.wikipathways.org/#accessRights> ;
   dct:language <http://id.loc.gov/vocabulary/iso639-1/en>;
   fdpo:metadataIssued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  fdpo:metadataModified "2024-02-10T13:06:00.000Z"^^xsd:dateTime;
+  fdpo:metadataModified "2024-04-10T13:06:00.000Z"^^xsd:dateTime;
   fdpo:metadataCatalog
     <https://fdp.wikipathways.org/catalog/index.ttl> .
 
@@ -39,21 +38,20 @@
   dct:title "WikiPathways Catalog" ;
   foaf:homePage <https://data.wikipathways.org/> ;
   fdpo:metadataIssued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  fdpo:metadataModified "2024-02-10T13:06:00.000Z"^^xsd:dateTime;
+  fdpo:metadataModified "2024-04-10T13:06:00.000Z"^^xsd:dateTime;
   dct:issued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  dct:modified "2024-02-10T13:06:00.000Z"^^xsd:dateTime;
+  dct:modified "2024-04-10T13:06:00.000Z"^^xsd:dateTime;
   dct:conformsTo [ rdfs:label "Catalog Profile" ] ;
   dct:isPartOf <http://fdp.wikipathways.org/index.ttl>;
-  dcat:dataset <https://wikipathways.github.io/fdp/dataset/20240210/> .
+  dcat:dataset <https://fdp.wikipathways.org/dataset/20240410/index.ttl> .
 
-<https://fdp.wikipathways.org/dataset/20240210/index.ttl> a dcat:Dataset ;
-  dct:title "WikiPathways 20240210" ;
-  dcat:distribution <https://wikipathways.github.io/fdp/dataset/20240210/gpml/index.ttl> ,
-    <https://wikipathways.github.io/fdp/dataset/20240210/gmt/index.ttl> .
+<https://fdp.wikipathways.org/dataset/20240410/index.ttl> a dcat:Dataset ;
+  dct:title "WikiPathways 20240410" ;
+  dcat:distribution <https://fdp.wikipathways.org/dataset/20240410/gpml/index.ttl> ,
+    <https://fdp.wikipathways.org/dataset/20240410/gmt/index.ttl> .
 
-<https://fdp.wikipathways.org/dataset/20240210/gpml/index.ttl> a dcat:Distribution ;
-  dct:title "WikiPathways 20240210, GPML files" .
-  
-<https://fdp.wikipathways.org/dataset/20240210/gmt/index.ttl> a dcat:Distribution ;
-  dct:title "WikiPathways 20240210, GMT files" .
-  
+<https://fdp.wikipathways.org/dataset/20240410/gpml/index.ttl> a dcat:Distribution ;
+  dct:title "WikiPathways 20240410, GPML files" .
+
+<https://fdp.wikipathways.org/dataset/20240410/gmt/index.ttl> a dcat:Distribution ;
+  dct:title "WikiPathways 20240410, GMT files" .

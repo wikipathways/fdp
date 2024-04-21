@@ -1,4 +1,4 @@
-date2 = "2024-02-10"
+date2 = "2024-04-10"
 date = date2.replaceAll("-", "")
 
 prefixTemplate = new File("prefixes.template").text
