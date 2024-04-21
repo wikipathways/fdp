@@ -1,0 +1,9 @@
+<https://fdp.wikipathways.org/dataset/%%DATE%%/rdf/index.ttl#wp> a dcat:Distribution ;
+  dct:title "WikiPathways %%DATE%%, WPRDF file" ;
+  dcat:downloadURL  <http://data.wikipathways.org/%%DATE%%/rdf/wikipathways-%%DATE%%-rdf-wp.zip> ;
+  dcat:mediaType    "application/zip" .
+
+<https://fdp.wikipathways.org/dataset/%%DATE%%/rdf/index.ttl#gpml> a dcat:Distribution ;
+  dct:title "WikiPathways %%DATE%%, GPMLRDF file" ;
+  dcat:downloadURL  <http://data.wikipathways.org/%%DATE%%/rdf/wikipathways-%%DATE%%-rdf-gpml.zip> ;
+  dcat:mediaType    "application/zip" .

@@ -21,7 +21,19 @@
 <https://fdp.wikipathways.org/dataset/20240410/index.ttl> a dcat:Dataset ;
   dct:title "WikiPathways 20240410" ;
   dcat:distribution <https://fdp.wikipathways.org/dataset/20240410/gpml/index.ttl> ,
+    <https://fdp.wikipathways.org/dataset/20240410/rdf/wp/index.ttl> ;
+    <https://fdp.wikipathways.org/dataset/20240410/rdf/gpml/index.ttl> ;
     <https://fdp.wikipathways.org/dataset/20240410/gmt/index.ttl> .
+
+<https://fdp.wikipathways.org/dataset/20240410/rdf/index.ttl#wp> a dcat:Distribution ;
+  dct:title "WikiPathways 20240410, WPRDF file" ;
+  dcat:downloadURL  <http://data.wikipathways.org/20240410/rdf/wikipathways-20240410-rdf-wp.zip> ;
+  dcat:mediaType    "application/zip" .
+
+<https://fdp.wikipathways.org/dataset/20240410/rdf/index.ttl#gpml> a dcat:Distribution ;
+  dct:title "WikiPathways 20240410, GPMLRDF file" ;
+  dcat:downloadURL  <http://data.wikipathways.org/20240410/rdf/wikipathways-20240410-rdf-gpml.zip> ;
+  dcat:mediaType    "application/zip" .
 
 <https://fdp.wikipathways.org/dataset/20240410/gpml/index.ttl> a dcat:Distribution ;
   dct:title "WikiPathways 20240410, GPML files" .
