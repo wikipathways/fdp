@@ -1,0 +1,2 @@
+<https://fdp.wikipathways.org/dataset/%%DATE%%/gmt/index.ttl> a dcat:Distribution ;
+  dct:title "WikiPathways %%DATE%%, GMT files" .
