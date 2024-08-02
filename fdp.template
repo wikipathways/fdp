@@ -8,6 +8,7 @@
   dct:hasVersion "%%DATE%%" ;
   dct:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd4.0>;
   dct:publisher <https://wikipathways.org/>;
+  dcat:landingPage <https://data.wikipathways.org/%%DATE%%/>
   ejprd:vpConnection <https://w3id.org/ejp-rd/vocabulary#VPDiscoverable>;
   ejprd:personalData "false";
   dct:conformsTo [ rdfs:label "FAIR Data Point Profile" ];
