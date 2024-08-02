@@ -4,6 +4,14 @@ Repository with the content of the WikiPathways FAIR Data Point.
 
 It pings the [EJP-RD FAIR Data Points Index](https://index.vp.ejprarediseases.org).
 
+## File generation
+
+```shell
+groovy update.groovy
+cp index.ttl index.html
+cp catalog/index.ttl catalog/index.html
+```
+
 ## ShEx Validation
 
 The following commands can be used to validate the FDP against
