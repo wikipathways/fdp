@@ -22,7 +22,7 @@ if (!datasetFolder.exists()) datasetFolder.mkdir()
 rdfFolder = new File("dataset/${date}/rdf")
 if (!rdfFolder.exists()) rdfFolder.mkdir()
 rdfFile = new File("dataset/${date}/rdf/index.ttl")
-rdfFile.text = prefixTemplate + "\n" + rdfFile
+rdfFile.text = prefixTemplate + "\n" + rdfTemplate
 
 // GMT file
 gmtFolder = new File("dataset/${date}/gmt")

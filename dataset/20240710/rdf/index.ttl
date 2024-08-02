@@ -6,4 +6,12 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-dataset/20240710/rdf/index.ttl
+<https://fdp.wikipathways.org/dataset/20240710/rdf/index.ttl#wp> a dcat:Distribution ;
+  dct:title "WikiPathways 20240710, WPRDF file" ;
+  dcat:downloadURL  <http://data.wikipathways.org/20240710/rdf/wikipathways-20240710-rdf-wp.zip> ;
+  dcat:mediaType    "application/zip" .
+
+<https://fdp.wikipathways.org/dataset/20240710/rdf/index.ttl#gpml> a dcat:Distribution ;
+  dct:title "WikiPathways 20240710, GPMLRDF file" ;
+  dcat:downloadURL  <http://data.wikipathways.org/20240710/rdf/wikipathways-20240710-rdf-gpml.zip> ;
+  dcat:mediaType    "application/zip" .
