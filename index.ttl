@@ -21,16 +21,16 @@
   dct:hasVersion "20240710" ;
   dct:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd4.0>;
   dct:publisher <https://wikipathways.org/>;
-  dcat:landingPage <https://data.wikipathways.org/20240710/>
+  dcat:landingPage <https://data.wikipathways.org/20240710/>;
   ejprd:vpConnection <https://w3id.org/ejp-rd/vocabulary#VPDiscoverable>;
   ejprd:personalData "false";
   dct:conformsTo [ rdfs:label "FAIR Data Point Profile" ];
   dct:accessRights <https://fdp.wikipathways.org/#accessRights> ;
   dct:language <http://id.loc.gov/vocabulary/iso639-1/en>;
   fdpo:metadataIssued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  fdpo:metadataModified "2024-08-02T08:05:08.326986185Z"^^xsd:dateTime;
+  fdpo:metadataModified "2024-08-02T08:07:10.397073077Z"^^xsd:dateTime;
   dct:issued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  dct:modified "2024-08-02T08:05:08.326986185Z"^^xsd:dateTime;
+  dct:modified "2024-08-02T08:07:10.397073077Z"^^xsd:dateTime;
   dcat:contactPoint <https://fdp.wikipathways.org/contact/>;
   fdpo:metadataCatalog
     <https://fdp.wikipathways.org/catalog/index.ttl> .
