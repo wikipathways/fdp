@@ -1,6 +1,6 @@
 <https://fdp.wikipathways.org/dataset/%%DATE%%/index.ttl> a dcat:Dataset ;
   dct:title "WikiPathways %%DATE%%" ;
   dcat:distribution <https://fdp.wikipathways.org/dataset/%%DATE%%/gpml/index.ttl> ,
-    <https://fdp.wikipathways.org/dataset/%%DATE%%/rdf/index.ttl#gpml> ;
-    <https://fdp.wikipathways.org/dataset/%%DATE%%/rdf/index.ttl#wp> ;
+    <https://fdp.wikipathways.org/dataset/%%DATE%%/rdf/index.ttl#gpml> ,
+    <https://fdp.wikipathways.org/dataset/%%DATE%%/rdf/index.ttl#wp> ,
     <https://fdp.wikipathways.org/dataset/%%DATE%%/gmt/index.ttl> .
