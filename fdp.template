@@ -3,10 +3,10 @@
   dct:title "WikiPathways FAIR Data Point";
   foaf:logo <https://upload.wikimedia.org/wikipedia/commons/8/83/Wplogo_with_text_500.png>;
   dcat:theme <http://vocabularies.wikipathways.org/wp#Pathway>;
-  dct:keyword [
+  dct:keyword
     "biological pathway", "rare disease", "biomarker", "gene",
     "protein", "metabolite"
-  ];
+  ;
   dct:conformsTo <https://www.purl.org/fairtools/fdp/schema/0.1/fdpMetadata>;
   dct:description "This FAIR Data Point deployment is used to describe WikiPathways.";
   dct:hasVersion "%%DATE%%" ;
