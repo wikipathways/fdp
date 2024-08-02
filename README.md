@@ -2,7 +2,7 @@
 
 Repository with the content of the WikiPathways FAIR Data Point.
 
-It pings the EJP-RD FAIR Data Points Index.
+It pings the [EJP-RD FAIR Data Points Index](https://index.vp.ejprarediseases.org).
 
 ## ShEx Validation
 
