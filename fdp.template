@@ -19,9 +19,9 @@
   dct:accessRights <https://fdp.wikipathways.org/#accessRights> ;
   dct:language <http://id.loc.gov/vocabulary/iso639-1/en>;
   fdpo:metadataIssued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  fdpo:metadataModified "%%DATE2%%T13:06:00.000Z"^^xsd:dateTime;
+  fdpo:metadataModified "%%ISOTIME%%"^^xsd:dateTime;
   dct:issued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  dct:modified "%%DATE2%%T13:06:00.000Z"^^xsd:dateTime;
+  dct:modified "%%ISOTIME%%"^^xsd:dateTime;
   dcat:contactPoint <https://fdp.wikipathways.org/contact/>;
   fdpo:metadataCatalog
     <https://fdp.wikipathways.org/catalog/index.ttl> .

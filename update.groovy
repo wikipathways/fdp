@@ -1,5 +1,20 @@
-date2 = "2024-07-10"
+import java.time.LocalDateTime
+import java.time.ZoneId
+import java.time.format.DateTimeFormatter
+import java.util.Calendar
+
+calendar = Calendar.getInstance();
+year = calendar.get(Calendar.YEAR)
+month = calendar.get(Calendar.MONTH) + 1 // January = 0
+day = calendar.get(Calendar.MONTH)
+if (day < 10) month += -1
+if (month < 10) month = "0" + month
+date2 = "${year}-${month}-10"
 date = date2.replaceAll("-", "")
+localTime = LocalDateTime.now()
+isotime = localTime.atZone(ZoneId.systemDefault()).format(
+  DateTimeFormatter.ISO_INSTANT
+)
 
 prefixTemplate = new File("prefixes.template").text
 rdfTemplate = new File("rdf.template").text
@@ -14,6 +29,7 @@ catalogTemplate = new File("catalog.template").text
   .replaceAll("%%DATE%%", date).replaceAll("%%DATE2%%", date2)
 fdpTemplate = new File("fdp.template").text
   .replaceAll("%%DATE%%", date).replaceAll("%%DATE2%%", date2)
+  .replaceAll("%%ISOTIME%%", isotime)
 
 datasetFolder = new File("dataset/${date}")
 if (!datasetFolder.exists()) datasetFolder.mkdir()
