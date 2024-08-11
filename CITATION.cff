@@ -1,0 +1,70 @@
+cff-version: 1.2.0
+message: Please cite the following works when using this software.
+type: software
+authors:
+  - family-names: Slenter
+    given-names: Denise N.
+  - family-names: Kutmon
+    given-names: Martina
+  - family-names: Hanspers
+    given-names: Kristina
+  - family-names: Hanspers
+    given-names: Kristina
+  - family-names: Riutta
+    given-names: Anders
+  - family-names: Windsor
+    given-names: Jacob
+  - family-names: Nunes
+    given-names: Nuno
+  - family-names: Mélius
+    given-names: Jonathan
+  - family-names: Cirillo
+    given-names: Elisa
+  - family-names: Coort
+    given-names: Susan
+  - family-names: Digles
+    given-names: Daniela
+  - family-names: Ehrhart
+    given-names: Friederike
+  - family-names: Giesbertz
+    given-names: Pieter
+  - family-names: Kalafati
+    given-names: Marianthi
+  - family-names: Martens
+    given-names: Marvin
+  - family-names: Miller
+    given-names: Ryan
+  - family-names: Nishida
+    given-names: Kozo
+  - family-names: Rieswijk
+    given-names: Linda
+  - family-names: Waagmeester
+    given-names: Andra
+  - family-names: Eijssen
+    given-names: Lars M.T.
+  - family-names: Evelo
+    given-names: Chris T.
+  - family-names: Pico
+    given-names: Alexander R.
+  - family-names: Pico
+    given-names: Alexander R.
+  - family-names: Willighagen
+    given-names: Egon L.
+doi: 10.1093/NAR/GKX1064
+identifiers:
+  - type: doi
+    value: 10.1093/NAR/GKX1064
+  - type: other
+    value: urn:issn:0305-1048
+  - type: other
+    value: pmcid:5753270
+  - type: other
+    value: pmid:29136241
+keywords:
+  - WikiPathways
+  - metabolomics
+  - biological pathway
+  - database
+title: >-
+  WikiPathways: a multifaceted pathway database bridging metabolomics to other
+  omics research
