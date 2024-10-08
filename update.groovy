@@ -6,7 +6,7 @@ import java.util.Calendar
 calendar = Calendar.getInstance();
 year = calendar.get(Calendar.YEAR)
 month = calendar.get(Calendar.MONTH) + 1 // January = 0
-day = calendar.get(Calendar.MONTH)
+day = calendar.get(Calendar.DAY_OF_MONTH)
 if (day < 10) month += -1
 if (month < 10) month = "0" + month
 date2 = "${year}-${month}-10"
