@@ -7,18 +7,6 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix ejprd: <https://w3id.org/ejp-rd/vocabulary#> .
 
-<https://fdp.wikipathways.org/catalog/index.ttl> a dcat:Catalog ;
-  rdfs:label "WikiPathways Catalog" ;
-  dct:title "WikiPathways Catalog" ;
-  foaf:homePage <https://data.wikipathways.org/> ;
-  fdpo:metadataIssued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  fdpo:metadataModified "2024-10-10T13:06:00.000Z"^^xsd:dateTime;
-  dct:issued "2023-03-10T07:42:08.000Z"^^xsd:dateTime;
-  dct:modified "2024-10-10T13:06:00.000Z"^^xsd:dateTime;
-  dct:conformsTo [ rdfs:label "Catalog Profile" ] ;
-  dct:isPartOf <http://fdp.wikipathways.org/index.ttl>;
-  dcat:dataset <https://fdp.wikipathways.org/dataset/20241010/index.ttl> .
-
 <https://fdp.wikipathways.org/dataset/20241010/index.ttl> a dcat:Dataset ;
   dct:title "WikiPathways 20241010" ;
   dcat:distribution <https://fdp.wikipathways.org/dataset/20241010/gpml/index.ttl> ,
