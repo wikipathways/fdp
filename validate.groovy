@@ -1,4 +1,4 @@
-@Grab(group='io.github.egonw.bacting', module='managers-rdf', version='0.3.2')
+@Grab(group='io.github.egonw.bacting', module='managers-rdf', version='1.0.12')
 
 import org.apache.jena.shex.ShexStatus
 
