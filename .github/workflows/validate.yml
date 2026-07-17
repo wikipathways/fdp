@@ -18,7 +18,7 @@ jobs:
   validate-rdf:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true
           fetch-depth: 0
@@ -40,7 +40,7 @@ jobs:
 
       - name: ShEx validation
         run: |
-          sudo apt install groovy
+          sudo apt install openjdk-21-jre groovy
           groovy validate.groovy resource.shex http://fairdatapoint.org/ResourceShape index.html         http://purl.org/fdp/fdp-o#FairDataPoint
           groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape  index.html         http://www.w3.org/ns/dcat#Catalog
           groovy validate.groovy catalog.shex  http://fairdatapoint.org/CatalogShape  catalog/index.html http://www.w3.org/ns/dcat#Catalog
@@ -51,18 +51,18 @@ jobs:
     needs: validate-rdf
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: main
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: .
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
 
   # Jeckyll Website Deployment job
   deploy:
@@ -74,19 +74,19 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   ping:
     runs-on: ubuntu-latest
     needs: deploy
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true
           fetch-depth: 0
 
       - name: Install python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
 
